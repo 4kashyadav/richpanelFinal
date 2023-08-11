@@ -1,0 +1,21 @@
+.background {
+  background-color: #1e4d91;
+  width: 100vw;
+  height: 100vh;
+}
+
+.input {
+  border: #d2d2d2 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.alreadyMember {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.alreadyMember a {
+  color: #285495;
+  text-decoration: none;
+}

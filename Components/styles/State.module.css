@@ -1,0 +1,39 @@
+.bg {
+    background-color: #1e4d90;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.changePlan:hover {
+    background-color: #1f4d91 !important;
+    color: #fff;
+}
+
+.planName {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.planRes {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.planPrice {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.note {
+    font-size: 12px;
+    background: #f6f6f7;
+}

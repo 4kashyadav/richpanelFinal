@@ -1,0 +1,101 @@
+.bg {
+  background-color: #feffff;
+  width: 100%;
+  height: 100vh;
+}
+
+.table tr td {
+  padding: 0.5rem 2.5rem;
+}
+
+.switch_wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  background: #1e4c91;
+}
+
+.switch_wrapper [type="radio"] {
+  position: absolute;
+  left: -99999px;
+}
+
+.switch_wrapper label {
+  font-size: 16px;
+  z-index: 1;
+  min-width: 100px;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: color 0.25s ease-in-out;
+  text-align: center;
+}
+
+.highlighterLeft {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: #fff;
+  color: black;
+}
+
+.highlighterRight {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: #fff;
+  color: black;
+}
+
+.tbHead {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    position: relative;
+    background: #7994bd !important;
+    cursor: pointer;
+}
+
+.tbHead::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #7994bd !important;
+}
+
+.tbHeadSelected{
+    background: #1e4c91 !important;
+}
+
+.tbHeadSelected::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; 
+    border-top: 10px solid #1e4c91;
+}
+
+.tbBodySelected {
+    color: #1e4c91 !important;
+    font-weight: 600;
+}
